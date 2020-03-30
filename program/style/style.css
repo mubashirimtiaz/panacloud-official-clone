@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.nav-icon{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    position: fixed;
+    z-index: 5;
+    cursor: pointer;
+    transition: all 2s ease 0s;
+}
+.trollBtn{
+    position: absolute;
+    bottom: 8%;
+    left: 49%;
+}
+.trollBtn .btn{
+    background-color: transparent;
+    border: 0;
+}
+.navbar{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(7, 153, 146,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all .5s ease 0s;
+    overflow: hidden;
+}
+.nav-item{
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    transition: all 0.6s ease 0s;
+    opacity: 1;
+    text-shadow: 0px 0px 5px rgba(10, 61, 98,1.0);
+}
+.nav-link a:hover{
+    color: black;
+}
+
+.main-container{
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    transition: all 0.5s ease 5s;
+    height: 100vh;
+}
+
+.box{
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box1{
+    background-color: #72c9b9;
+}
+.box2{
+    background-color: #ffc001;
+}
+.box3{
+    background-color: #e54e23;
+}
+.box4{
+    background-color: #7a3bd2;
+}
+.box5{
+    background-color: #42b4ff;
+}
+.nestedbox{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+.nestedbox1{
+    border: 18px solid #dbf1ed;
+}
+.nestedbox2{
+    border: 18px solid #fcdc7b;
+}
+.nestedbox3{
+    border: 18px solid #df8972;
+}
+.nestedbox4{
+    border: 18px solid #a485cf;
+}
+.nestedbox5{
+    border: 18px solid #97d1f8;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner-content{
+    flex: 1 0 0;
+    margin: auto;
+}
+.inner-content1 img{
+    height: 400px;
+    padding: 40px 0px;
+}
+.inner-content1{
+    text-align: center;
+}
+.inner-content2 .box-text p{
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+@media screen and (max-width: 1000px){
+    .content{
+        display: block;
+    }
+    .inner-content1 img{
+        height: 250px;
+    }
+    .inner-content2 .box-text p{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 500px){
+    .content{
+        display: block;
+    }
+    .inner-content1 img{
+        height: 200px;
+        margin-top: 30px;
+    }
+    .inner-content2 .box-text p{
+        font-size: 20px;
+    }
+}
+/* .pageName{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+} */
+/* .content{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.inner-content{
+    margin: 5px;
+    color: #000000;
+    text-align: center;
+} */
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 15px;
+}
+.logo1{
+    background-color:#72c9b9;
+}
+.logo2{
+    background-color:#ffc001;
+}
+.logo3{
+    background-color:#e54e23;
+}
+.logo4{
+    background-color:#7a3bd2;
+}
+.logo5{
+    background-color:#42b4ff;
+}
+.toggleplace{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 30px;
+}
+.toggleplace1{
+    background-color:#72c9b9 ;
+}
+.toggleplace2{
+    background-color:#ffc001 ;
+}
+.toggleplace3{
+    background-color:#e54e23 ;
+}
+.toggleplace4{
+    background-color:#7a3bd2 ;
+}
+.toggleplace5{
+    background-color:#42b4ff ;
+}
