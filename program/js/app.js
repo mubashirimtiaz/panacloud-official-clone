@@ -4,8 +4,8 @@ var navLink = document.querySelectorAll('.nav-link');
 var mainCont = document.querySelector('.main-container');
 
 
-nav.classList.add('hide');
-document.addEventListener('onConentLoaded',()=>{
+// nav.classList.add('hide');
+document.addEventListener('DOMContentLoaded',()=>{
     nav.classList.add('hide');
 })
 
